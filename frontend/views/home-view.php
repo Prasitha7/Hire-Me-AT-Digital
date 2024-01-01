@@ -24,7 +24,7 @@
 <!--Navigation Bar-->
 <div class="topnav">
     <div class="topnav-home">
-        <a class="home" href="home-view.php">I am PrasithaJ</a>
+        <a class="home" href="home-view.php">AT Digital</a>
     </div>
     <div class="topnav-menu">
         
@@ -56,26 +56,38 @@
 <div class="scroll">
     <div class="hero">
         <h3>Hi</h3>
-        <h1> AT Digital
+        <h1> AT Digital</h1>
         <h2>.io</h2>
+        <h1> WEB DEVELOPMENT </h1>
     </div>
 </div>
 
-<!--Why Hire me Section -->
-<div class="scroll" id="why-me">
-    <h2>My Features Section</h2>
+<!--Why Us -->
+<div class="scroll" id="why-us">
+    <ul>
+        <li><h2>Why Choose AT Digital</h2></li>
+        <li><h4>Unlimited Revisions</h4><br><br></li>
+        <li><p>(Yes, you read it right 😉 We give unlimited revisions at the design stage.)</p><br><br></li>
+        <li><h4>Zero Hosting Charges
+</h4></li>
+        <li><h4>Minimum Maintenance</h4></li>
+        <li><h4>Easy To Manage</h4></li>
+        <li><h4>Future Proof Technology</h4></li>
+        <li><h4>Simple & Easy Process</h4></li>
+    </ul>
+
     <!-- Add your content for the My Features section here -->
 </div>
 
 <!-- My Work Section -->
 <div class="scroll" id="my-work">
-    <h2>Things I Do</h2>
+    <h2>Things We Do</h2>
     <!-- Add your content for the My Work section here -->
 </div>
 
 <!-- Contact Me Section -->
 <div class="scroll" id="contact-me">
-    <h2>Contact Me Section</h2>
+    <h2>Contact Us Section</h2>
     <!-- Add your content for the Contact Me section here -->
 </div>
   

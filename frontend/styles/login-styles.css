@@ -1,11 +1,11 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-body{
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,7 +31,7 @@ body{
     object-fit: cover;
 }
 
-.wrapper{
+#form {
     width: 440px;
     background: transparent;
     backdrop-filter: blur(15px);
@@ -42,21 +42,18 @@ body{
     padding: 30px 40px;
 }
 
-.wrapper h1{
+#form h1 {
     font-size: 36px;
     text-align: center;
 }
 
-.wrapper .inputbox{
-    position: relative;
-    width: 100%;
-    height: 50px;
-    margin: 30px 0;
+#form label {
+    font-size: 18px;
 }
 
-.inputbox input{
+#form input {
     width: 100%;
-    height: 100%;
+    height: 40px;
     background: transparent;
     border: none;
     outline: none;
@@ -64,40 +61,15 @@ body{
     border-radius: 40px;
     font-size: 16px;
     color: aliceblue;
-    padding: 20px 45px 20px 20px;
-    font-size: 16px;
+    padding: 10px;
+    margin-bottom: 20px;
 }
 
-.inputbox input::placeholder{
+#form input::placeholder {
     color: aliceblue;
 }
 
-.inputbox i{
-    position: absolute;
-    right: 20px; 
-    top: 30%;
-    transform: translate(-50%);
-    font-size: 20px;
-}
-
-.wrapper.signinother{
-    display: flex;
-    justify-content: space-between;
-    font-size: 14.5px;
-    margin: -15px 0 15px;  
-}
-
-.signinother a{
-    color: aliceblue;
-    text-decoration: none;
-
-}
-
-.signin-other a:hover{
-    text-decoration: underline;
-}
-
-.wrapper .btn{
+#form input[type="submit"] {
     width: 100%;
     height: 45px;
     background: azure;
@@ -109,4 +81,14 @@ body{
     font-size: 16px;
     color: #333;
     font-weight: 600;
+}
+
+#form input[type="submit"]:hover {
+    background-color: #585858;
+    color: azure;
+}
+
+#form .error-message {
+    color: red;
+    margin-top: 10px;
 }
