@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.sequence-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    z-index: -1; /* Set a negative z-index to place it behind other elements */
+}
+
+.at-main-sequence {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.scroll {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    scroll-snap-align: start;
+}
+
+/* Style for the first section */
+.scroll:nth-child(2) {
+    background-color: #feffff; /* Change the background color as needed */
+    align-content: center;
+}
+
+/* Style for the second section */
+.scroll:nth-child(3) {
+    background-color: #949696; /* Change the background color as needed */
+}
+
+/*Hero Section*/
+.hero {
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+    width: 80%; /* Set width to 80% */
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 8vw;
+    text-align: center;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero h2 {
+    font-size: 6vw;
+    text-align: center;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.hero h3 {
+    font-size: 3vw;
+    text-align: left;
+    margin: 0;
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+/*Home Navigation Bar*/
+.homenav {
+    position: fixed;
+    bottom: 0; /* Updated to position at the bottom of the viewport */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust to center horizontally */
+}
+
+.homenav ul {
+    display: flex; /* Display the list items horizontally */
+    justify-content: center; /* Center the items horizontally */
+    align-items: flex-end; /* Align items at the bottom */
+    list-style: none;
+    padding: 0;
+    margin-bottom: 10%;
+}
+
+.homenav li {
+    margin-right: 2vw; /* Adjust spacing between buttons */
+}
+
+.scroll-button {
+    width: 10rem;
+    height: 3rem;
+    background: #D9D9D9;
+    border: black;
+    outline: none;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 15pt;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s; /* Added transition for a smooth hover effect */
+}
+
+.scroll-button:hover {
+    height: 4rem;
+    background-color: #585858;
+    color: azure;
+}
+
+#scroll-button-myFeatures {
+    transition: transform 0.2s ease-in-out;
+}
